@@ -1,2 +1,5 @@
 PyYAML >= 5.3
 UV
+Streamlit
+pygame
+pytest
