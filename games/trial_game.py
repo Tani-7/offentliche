@@ -9,10 +9,13 @@ class Auslander:
     def __init__(self):
         pygame.init()
         self.settings = Settings()
+       
+        """self.screen = pygame.display.set_mode(
+            (self.settings.screen_width, self.settings.screen_height)"""
+        
         self.screen = pygame.display.set_mode((0, 0), pygame.FULLSCREEN)
         self.settings.screen_width = self.screen.get_rect().width
         self.settings.screen_height = self.screen.get_rect().height
-
         pygame.display.set_caption('Auslander Krieg')
 
         self.clock = pygame.time.Clock()
@@ -20,7 +23,7 @@ class Auslander:
 
     def run_game(self):
         """The game’s main loop."""
-        while True:
+        while True:p
             self._check_events()
             self.ship.update()
             self._update_screen()
