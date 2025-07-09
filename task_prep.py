@@ -13,7 +13,7 @@ if __name__ == '__main__':
     parser.add_argument('--config', '-c', type=argparse.FileType('r'), help='Konfigurationsdatei')
     parser.add_argument('-o', dest='output', type=argparse.FileType('w'), help='Ausgabedatei', default=sys.stdout)
 
-    args = parser.parse_args()
+    args = parser.parse_args()        
 
     if args.config:
         config = configparser.ConfigParser()
